@@ -10,8 +10,8 @@ const port = 3000;
 //db setup
 const db = new pg.Client({
   user : 'postgres',
-  database : 'World',
-  password : 'kandari007',
+  database : 'todo',
+  password : '111111',
   host : 'localhost',
   port : 5432
 })
@@ -22,12 +22,6 @@ db.connect();
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("public"));
 
-
-
-let items = [
-  { id: 1, title: "Buy milk" },
-  { id: 2, title: "Finish homework" },
-];
 
 const d= new Date();
 const month = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul","Aug", "Sep", "Oct", "Nov", "Dec"];

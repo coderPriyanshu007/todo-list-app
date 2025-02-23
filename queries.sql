@@ -1,6 +1,6 @@
 CREATE TABLE items (
   id SERIAL PRIMARY KEY,
-  title VARCHAR(100) NOT NULL
+  title VARCHAR(100) NOT NULL,
+  list_title VARCHAR(20) NOT NULL
 );
 
-INSERT INTO items (title) VALUES ('Buy milk'), ('Finish homework');
